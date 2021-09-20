@@ -104,7 +104,7 @@ log_info "Installing Mender client and related files"
 deb_arch=$(probe_debian_arch_name)
 
 run_and_log_cmd "sudo mkdir -p work/rootfs/data/mender"
-run_and_log_cmd "sudo ln -sf /data/mender work/rootfs/var/lib"
+run_and_log_cmd "sudo ln -snf /data/mender work/rootfs/var/lib"
 
 if [ "${MENDER_CLIENT_INSTALL}" = "y" ]; then
 
