@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bent": "^7.3.12",
-    "jsdom": "^21.1.0"
+    "jsdom": "^22.1.0"
   },
   "scripts": {
     "start": "node index.js",
@@ -19,7 +19,7 @@
   "author": "Northern.tech AS",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://tracker.mender.io/projects/MEN"
+    "url": "https://northerntech.atlassian.net/projects/MEN"
   },
   "homepage": "https://github.com/mendersoftware/mender-convert#readme"
 }
