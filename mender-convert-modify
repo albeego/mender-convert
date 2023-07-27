@@ -101,6 +101,7 @@ sudo mount ${root_part} work/rootfs
 log_info "Creating state folder in the data partition for Mender client"
 run_and_log_cmd "sudo mkdir -p work/rootfs/data/mender"
 run_and_log_cmd "sudo mkdir -p work/rootfs/var/lib"
+run_and_log_cmd "sudo rm -r work/rootfs/var/lib/mender"
 run_and_log_cmd "sudo ln -sf /data/mender work/rootfs/var/lib"
 
 log_info "Installing Mender client and related files"
