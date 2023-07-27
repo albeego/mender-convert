@@ -162,7 +162,7 @@ MENDER_ARTIFACT_NAME=release-1 ./docker-mender-convert \
    --disk-image input/image/$INPUT_DISK_IMAGE \
    --config configs/raspberrypi3_config \
    --config input/config/$CUSTOM_CONFIG \
-   --overlay rootfs_overlay_demo/
+   --overlay rootfs_overlay_demo
 ```
 
 The container will use the `work/` directory as a temporary area to unpack and
@@ -176,6 +176,11 @@ information. The exact log file path is printed before the conversion starts.
 
 After it finishes, you can find your images in the `deploy` directory on your
 host machine!
+
+#### Troubleshooting
+
+A continuously expanded list of possible problems and how to address those is
+maintained in the [Mender documentation](https://docs.mender.io/troubleshoot/mender-client)
 
 ## Using mender-convert without Docker
 
@@ -194,7 +199,7 @@ Start the conversion process with:
 MENDER_ARTIFACT_NAME=release-1 ./mender-convert \
    --disk-image input/$INPUT_DISK_IMAGE \
    --config configs/raspberrypi3_config \
-   --overlay rootfs_overlay_demo/
+   --overlay rootfs_overlay_demo
 ```
 
 **NOTE!** You will be prompted to enter `sudo` password during the conversion
@@ -232,7 +237,7 @@ issue. We thank you in advance for your cooperation.
 * Follow us on [Twitter](https://twitter.com/mender_io). Please
   feel free to tweet us questions.
 * Fork us on [Github](https://github.com/mendersoftware)
-* Create an issue in the [bugtracker](https://tracker.mender.io/projects/MEN)
+* Create an issue in the [bugtracker](https://northerntech.atlassian.net/projects/MEN)
 * Email us at [contact@mender.io](mailto:contact@mender.io)
 * Connect to the [#mender IRC channel on Libera](https://web.libera.chat/?#mender)
 
